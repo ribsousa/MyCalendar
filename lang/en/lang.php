@@ -137,6 +137,14 @@ return [
         'permissions_opt_yes' => 'Yes',
     ],
     'event' => [// Event Component and Model
+        'comp_name' => 'Event Component',
+        'description' => 'Shows one event on page with details',
+        'slug_title' => 'Event Slug',
+        'slug_description' => 'URL slug to indicate Event ID to view on page',
+        'linkpage_title' => 'Link to Page',
+        'linkpage_desc' => 'Name of the event page file for list or calendar page. This property is used by the event component partial.',
+        'linkpage_group' => 'Links',
+        
         'label' => 'Event',
         'id' => 'ID',
         'name' => 'Title',
