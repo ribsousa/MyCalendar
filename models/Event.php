@@ -85,11 +85,11 @@ is_published
 			$days = range(1, $daysInMonth);
 			return array_combine($days, $days);
 		}
-		return [0 => 'Pick a Month AND Year'];
+		return [0 => 'kurtjensen.mycalendar::lang.event.error_pick_month_year'];
 	}
 
 	public function getMonthOptions() {
-		$months = ['0', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+		$months = ['0', 'kurtjensen.mycalendar::lang.event.month_jan', 'kurtjensen.mycalendar::lang.event.month_feb', 'kurtjensen.mycalendar::lang.event.month_mar', 'kurtjensen.mycalendar::lang.event.month_apr', 'kurtjensen.mycalendar::lang.event.month_may', 'kurtjensen.mycalendar::lang.event.month_jun', 'kurtjensen.mycalendar::lang.event.month_jul', 'kurtjensen.mycalendar::lang.event.month_aug', 'kurtjensen.mycalendar::lang.event.month_sep', 'kurtjensen.mycalendar::lang.event.month_oct', 'kurtjensen.mycalendar::lang.event.month_nov', 'kurtjensen.mycalendar::lang.event.month_dec'];
 		unset($months[0]);
 		return $months;
 	}
@@ -110,7 +110,7 @@ is_published
 
 			return $Users;
 		}
-		return [0 => 'Rainlab User Model Not Installed'];
+		return [0 => 'kurtjensen.mycalendar::lang.event.error_user_model'];
 	}
 
 }
