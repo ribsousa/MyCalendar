@@ -117,6 +117,13 @@ return [
         'permissions_opt_yes' => 'Sim',
     ],
     'event' => [// Event Component and Model
+        'comp_name' => 'Componente Evento',
+        'description' => 'Mostra um evento na página com detalhes',
+        'slug_title' => 'Evento Slug',
+        'slug_description' => 'URL slug para indicar Event ID para visualizar na página',
+        'linkpage_title' => 'Link para a página',
+        'linkpage_desc' => 'Nome do arquivo de página do evento para lista ou página do calendário. Esta propriedade é usada pela parcial do componente evento.',
+        'linkpage_group' => 'Links',
         'label' => 'Evento',
         'id' => 'ID',
         'name' => 'Título',
