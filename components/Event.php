@@ -10,8 +10,8 @@ class Event extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name' => 'Event Component',
-            'description' => 'Shows one event on page with details',
+            'name' => 'kurtjensen.mycalendar::lang.event.comp_name',
+            'description' => 'kurtjensen.mycalendar::lang.event.description',
         ];
     }
 
@@ -19,17 +19,17 @@ class Event extends ComponentBase
     {
         return [
             'slug' => [
-                'title' => 'Event Slug',
-                'description' => 'URL slug to indicate Event ID to view on page',
+                'title' => 'kurtjensen.mycalendar::lang.event.slug_title',
+                'description' => 'kurtjensen.mycalendar::lang.event.slug_description',
                 'default' => '{{ :slug }}',
                 'type' => 'string',
             ],
             'link_page' => [
-                'title' => 'Link to Page',
-                'description' => 'Name of the event page file for list or calendar page. This property is used by the event component partial.',
+                'title' => 'kurtjensen.mycalendar::lang.event.linkpage_title',
+                'description' => 'kurtjensen.mycalendar::lang.event.linkpage_desc',
                 'type' => 'dropdown',
                 'default' => 'cal/events',
-                'group' => 'Links',
+                'group' => 'kurtjensen.mycalendar::lang.linkpage_group',
             ],
         ];
     }
@@ -49,7 +49,7 @@ class Event extends ComponentBase
     {
         $slug = $this->property('slug');
         if (!$e = MyEvents::where('is_published', true)->find($slug)) {
-            return 'Event not found!';
+            return 'kurtjensen.mycalendar::lang.event.error_not_found';
         }
 
         $maxLen = $this->property('title_max', 100);
