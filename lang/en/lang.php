@@ -153,6 +153,8 @@ return [
         'error_not_found' => 'Event not found!',
         'error_allow_no' => 'Event not allowed!',
         'error_prohibit' => 'Event Prohibited!',
+        'error_user_model' => 'User Model Not Installed',
+        'error_pick_month_year' => 'Pick a Month AND Year',
 
         'phold_name' => 'Name your Event',
         'phold_fname' => 'Creator First',
@@ -163,6 +165,19 @@ return [
         'phold_link' => 'Add URL Link to your event.',
         'phold_categorys' => 'Categories',
         'empty_categorys' => 'There are no categories, you should create one first!',
+        
+        'month_jan' => 'January',
+        'month_feb' => 'February',
+        'month_mar' => 'March',
+        'month_apr' => 'April',
+        'month_may' => 'May',
+        'month_jun' => 'June',
+        'month_jul' => 'July',
+        'month_aug' => 'August',
+        'month_sep' => 'September',
+        'month_oct' => 'October',
+        'month_nov' => 'November',
+        'month_dec' => 'December',
     ],
     'event_form' => [// EventForm Component
         'name' => 'EventForm Component',
