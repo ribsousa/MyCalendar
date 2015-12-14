@@ -48,13 +48,17 @@ class EvList extends ComponentBase {
 				'description' => 'kurtjensen.mycalendar::lang.evlist.loadstyle_description',
 				'type' => 'dropdown',
 				'default' => '1',
-				'options' => [0 => 'kurtjensen.mycalendar::lang.evlist.opt_no', 1 => 'kurtjensen.mycalendar::lang.evlist.opt_Yes'],
+				'options' => [0 => 'kurtjensen.mycalendar::lang.evlist.opt_no', 1 => 'kurtjensen.mycalendar::lang.evlist.opt_yes'],
 			],
 		];
 	}
 
 	public function getColorOptions() {
-		return ['red' => 'kurtjensen.mycalendar::lang.evlist.color_red', 'green' => 'kurtjensen.mycalendar::lang.evlist.color_green', 'blue' => 'kurtjensen.mycalendar::lang.evlist.color_blue', 'yellow' => 'kurtjensen.mycalendar::lang.evlist.color_yellow'];
+		return ['red' => Lang::get('kurtjensen.mycalendar::lang.evlist.color_red'),
+        		'green' => Lang::get('kurtjensen.mycalendar::lang.evlist.color_green'),
+            		'blue' => Lang::get('kurtjensen.mycalendar::lang.evlist.color_blue'),
+            		'yellow' => Lang::get('kurtjensen.mycalendar::lang.evlist.color_yellow'),
+        		];
 	}
 
 	public function onRender() {
@@ -72,7 +76,15 @@ class EvList extends ComponentBase {
 
 	public function calcElements() {
 
-		$this->calHeadings = ['kurtjensen.mycalendar::lang.evlist.day_sun', 'kurtjensen.mycalendar::lang.evlist.day_mon', 'kurtjensen.mycalendar::lang.evlist.day_tue', 'kurtjensen.mycalendar::lang.evlist.day_wed', 'kurtjensen.mycalendar::lang.evlist.day_thu', 'kurtjensen.mycalendar::lang.evlist.day_fri', 'kurtjensen.mycalendar::lang.evlist.day_sat'];
+		$this->calHeadings = [
+	            Lang::get('kurtjensen.mycalendar::lang.evlist.day_sun'),
+	            Lang::get('kurtjensen.mycalendar::lang.evlist.day_mon'),
+	            Lang::get('kurtjensen.mycalendar::lang.evlist.day_tue'),
+	            Lang::get('kurtjensen.mycalendar::lang.evlist.day_wed'),
+	            Lang::get('kurtjensen.mycalendar::lang.evlist.day_thu'),
+	            Lang::get('kurtjensen.mycalendar::lang.evlist.day_fri'),
+	            Lang::get('kurtjensen.mycalendar::lang.evlist.day_sat'),
+	        ];
 		$time = strtotime($this->month . '/1/' . $this->year);
 		$this->monthTitle = date('M', $time);
 		$this->monthNum = date('n', $time);
