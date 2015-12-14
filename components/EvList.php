@@ -18,43 +18,43 @@ class EvList extends ComponentBase {
 
 	public function componentDetails() {
 		return [
-			'name' => 'List Component',
-			'description' => 'Shows a list of events',
+			'name' => 'kurtjensen.mycalendar::lang.evlist.comp_name',
+			'description' => 'kurtjensen.mycalendar::lang.evlist.description',
 		];
 	}
 
 	public function defineProperties() {
 		return [
 			'month' => [
-				'title' => 'Month',
-				'description' => 'The month you want to show.',
+				'title' => 'kurtjensen.mycalendar::lang.evlist.month_title',
+				'description' => 'kurtjensen.mycalendar::lang.evlist.month_description',
 			],
 			'year' => [
-				'title' => 'Year',
-				'description' => 'The month you want to show.',
+				'title' => 'kurtjensen.mycalendar::lang.evlist.year_title',
+				'description' => 'kurtjensen.mycalendar::lang.evlist.year_description',
 			],
 			'events' => [
-				'title' => 'Events',
-				'description' => 'Array of the events you want to show.',
+				'title' => 'kurtjensen.mycalendar::lang.evlist.events_title',
+				'description' => 'kurtjensen.mycalendar::lang.evlist.events_description',
 			],
 			'color' => [
-				'title' => 'Icon Color',
-				'description' => 'Array of the events you want to show.',
+				'title' => 'kurtjensen.mycalendar::lang.evlist.color_title',
+				'description' => 'kurtjensen.mycalendar::lang.evlist.color_description',
 				'type' => 'dropdown',
-				'default' => 'red',
+				'default' => 'kurtjensen.mycalendar::lang.evlist.color_default',
 			],
 			'loadstyle' => [
-				'title' => 'Load Style Sheet',
-				'description' => 'Load the default CSS file.',
+				'title' => 'kurtjensen.mycalendar::lang.evlist.loadstyle_title',
+				'description' => 'kurtjensen.mycalendar::lang.evlist.loadstyle_description',
 				'type' => 'dropdown',
 				'default' => '1',
-				'options' => [0 => 'No', 1 => 'Yes'],
+				'options' => [0 => 'kurtjensen.mycalendar::lang.evlist.opt_no', 1 => 'kurtjensen.mycalendar::lang.evlist.opt_Yes'],
 			],
 		];
 	}
 
 	public function getColorOptions() {
-		return ['red' => 'red', 'green' => 'green', 'blue' => 'blue', 'yellow' => 'yellow'];
+		return ['red' => 'kurtjensen.mycalendar::lang.evlist.color_red', 'green' => 'kurtjensen.mycalendar::lang.evlist.color_green', 'blue' => 'kurtjensen.mycalendar::lang.evlist.color_blue', 'yellow' => 'kurtjensen.mycalendar::lang.evlist.color_yellow'];
 	}
 
 	public function onRender() {
@@ -72,7 +72,7 @@ class EvList extends ComponentBase {
 
 	public function calcElements() {
 
-		$this->calHeadings = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+		$this->calHeadings = ['kurtjensen.mycalendar::lang.evlist.day_sun', 'kurtjensen.mycalendar::lang.evlist.day_mon', 'kurtjensen.mycalendar::lang.evlist.day_tue', 'kurtjensen.mycalendar::lang.evlist.day_wed', 'kurtjensen.mycalendar::lang.evlist.day_thu', 'kurtjensen.mycalendar::lang.evlist.day_fri', 'kurtjensen.mycalendar::lang.evlist.day_sat'];
 		$time = strtotime($this->month . '/1/' . $this->year);
 		$this->monthTitle = date('M', $time);
 		$this->monthNum = date('n', $time);
