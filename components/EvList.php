@@ -1,6 +1,7 @@
 <?php namespace KurtJensen\MyCalendar\Components;
 
 use Cms\Classes\ComponentBase;
+use Lang;
 
 class EvList extends ComponentBase {
 	public $month;
