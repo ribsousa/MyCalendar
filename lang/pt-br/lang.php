@@ -1,7 +1,7 @@
 <?php
 return [
     'plugin' => [//Plugin File
-        'name' => 'MeuCalendário',
+        'name' => 'Meu Calendário',
         'description' => 'Calendário super simples para exibição de eventos.',
         'user_btn' => 'Usuários',
         'tab' => 'MeuCalendário',
