@@ -85,7 +85,7 @@ return [
         'next' => 'Próximo',
     ],
     'week' => [// Week Component
-        'name' => 'Componente Eventos',
+        'name' => 'Componente Semana',
         'description' => 'Obter Eventos do banco de dados e inseri-los na página',
     ],
     'evlist' => [// EvList Component
