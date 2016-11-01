@@ -1,4 +1,5 @@
 <?php
+
 return [
     'plugin' => [//Plugin File
         'name' => 'Meu Calendário',
@@ -10,6 +11,7 @@ return [
     ],
     'events' => [// Events Controller
         'menu_label' => 'Eventos',
+
         'all_users' => 'Todos Usuários',
         'new_user' => 'Novo Usuário',
         'list_title' => 'Gerenciar Usuários',
@@ -27,6 +29,7 @@ return [
     ],
     'categories' => [// Categories Controller
         'menu_label' => 'Categorias',
+
         'all_users' => 'Todos Usuários',
         'new_user' => 'Novo Usuário',
         'list_title' => 'Gerenciar Usuários',
@@ -44,36 +47,49 @@ return [
     ],
     'settings' => [
         'description' => 'Configure proteção para categoria do calendário.',
+
         'menu_label' => 'Configurações do usuário',
         'menu_description' => 'Gerenciar configurações de base de usuários.',
+
         'public_perm_label' => 'Categoria pública',
         'public_perm_comment' => 'A permissão para as categorias que não serão bloqueadas a partir de exibição pública.',
+
         'deny_perm_label' => 'Categoria negada',
         'deny_perm_comment' => 'A permissão para as categorias que serão bloqueadas a partir de qualquer visão.',
+
         'default_perm_label' => 'Categoria padrão',
         'default_perm_comment' => 'A permissão que será definido em novas categorias por padrão (a menos que definido pelo usuário).',
     ],
     'month' => [// Month Component
         'name' => 'Componente mês',
         'description' => 'Mostra um calendário mensal com eventos',
+
         'month_title' => 'Mês',
         'month_description' => 'O mês que você deseja mostrar.',
+
         'year_title' => 'Ano',
         'year_description' => 'O ano que você deseja mostrar.',
+
         'events_title' => 'Eventos',
         'events_description' => 'Array dos eventos que você deseja mostrar.',
+
         'color_title' => 'Cor do calendário',
         'color_description' => 'Qual a cor que você deseja para o calendário?',
+
         'dayprops_title' => 'Propriedades do dia',
         'dayprops_description' => 'Array das propriedades que você deseja colocar no indicador de dia.',
+
         'loadstyle_title' => 'Carregar folha de estilo',
         'loadstyle_description' => 'Carregar o arquivo CSS padrão.',
+
         'opt_no' => 'Não',
         'opt_yes' => 'Sim',
+
         'color_red' => 'vermelho',
         'color_green' => 'verde',
         'color_blue' => 'azul',
         'color_yellow' => 'amarelo',
+
         'day_sun' => 'Dom',
         'day_mon' => 'Seg',
         'day_tue' => 'Ter',
@@ -81,6 +97,7 @@ return [
         'day_thu' => 'Qui',
         'day_fri' => 'Sex',
         'day_sat' => 'Sáb',
+
         'previous' => 'Anterior',
         'next' => 'Próximo',
     ],
@@ -115,6 +132,7 @@ return [
         'day_thu' => 'Qui',
         'day_fri' => 'Sex',
         'day_sat' => 'Sáb',
+
         'label' => 'Evento',
         'id' => 'ID',
         'name' => 'Título',
@@ -131,12 +149,15 @@ return [
     'events_comp' => [// Events Component
         'name' => 'Componente Eventos',
         'description' => 'Obter Eventos do banco de dados e inseri-los na página',
+
         'linkpage_title' => 'Link para a página',
         'linkpage_desc' => 'Nome do arquivo da página do evento para os "Detalhes" links. Esta propriedade é usada pela parcial do componente evento.',
         'linkpage_group' => 'Links',
         'linkpage_opt_none' => 'Nenhum - Use Modal Pop-up',
+
         'title_max_title' => 'Comprimento máximo do Título Popup',
         'title_max_description' => 'O comprimento máximo da propriedade "title" que mostra os detalhes de um evento em foco.',
+
         'permissions_title' => 'Usar permissão',
         'permissions_description' => 'Usar permissões para restringir o que as categorias de eventos são mostrados com base em funções.',
         'permissions_opt_no' => 'Não',
@@ -150,6 +171,7 @@ return [
         'linkpage_title' => 'Link para a página',
         'linkpage_desc' => 'Nome do arquivo de página do evento para lista ou página do calendário. Esta propriedade é usada pela parcial do componente evento.',
         'linkpage_group' => 'Links',
+
         'label' => 'Evento',
         'id' => 'ID',
         'name' => 'Título',
@@ -168,6 +190,7 @@ return [
         'error_prohibit' => 'evento Proibido!',
         'error_user_model' => 'Rainlab User Model Não está Instalado',
         'error_pick_month_year' => 'Escolha um Mês e um Ano',
+
         'phold_name' => 'Nome do seu Evento',
         'phold_fname' => 'Criador primeiro nome',
         'phold_lname' => 'Criador útlimo nome',
@@ -177,6 +200,7 @@ return [
         'phold_link' => 'Adicionar Link URL para o seu evento.',
         'phold_categorys' => 'Categorias',
         'empty_categorys' => 'Não há categorias, você deve criar uma primeiro!',
+
         'month_jan' => 'Janeiro',
         'month_feb' => 'Fevereiro',
         'month_mar' => 'Março',
@@ -193,12 +217,16 @@ return [
     'event_form' => [// EventForm Component
         'name' => 'Componente EventForm',
         'description' => 'Formulário front-end para permitir que os usuários adicione seus próprios eventos',
+
         'allow_pub_title' => 'Permitir publicação',
         'allow_pub_description' => 'Permitir que os usuários publiquem seu evento. (Não significa que um administrador deve fazê-lo.)',
+
         'ckeditor_title' => 'Use CKEditor',
         'ckeditor_description' => 'Carregue CKEditor do cdn.ckeditor.com no campo editor para descrição do evento.',
+
         'opt_no' => 'Não',
         'opt_yes' => 'Sim',
+
         'btn_add' => 'Adicionar evento',
         'btn_edit' => 'Editar',
         'btn_delete' => 'Excluir',
